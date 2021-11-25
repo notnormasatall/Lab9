@@ -1,11 +1,17 @@
 package mails;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.FileNotFoundException;
 import java.util.HashMap;
 
+@Setter @Getter
 public class MailInfo {
     private Client client;
     private MailCode mailCode;
+
+    public MailInfo() {}
 
     public String getMailText() throws FileNotFoundException {
 

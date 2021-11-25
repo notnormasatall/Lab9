@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 public enum MailCode {
-    HAPPY_BIRTHDAY("happy_birthday.txt"), GREETINGS("sales.txt");
+    HAPPY_BIRTHDAY("./sales.txt"), GREETINGS("./happy_birthday.txt");
 
     private final String filename;
 

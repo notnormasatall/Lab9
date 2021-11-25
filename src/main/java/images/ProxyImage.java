@@ -1,5 +1,8 @@
 package images;
 
+import lombok.Getter;
+
+@Getter
 public class ProxyImage implements Image{
     private String filename;
     private RealImage realimage = null;

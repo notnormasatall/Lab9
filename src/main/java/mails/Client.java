@@ -1,8 +1,9 @@
 package mails;
 
 import lombok.Getter;
+import lombok.Setter;
 
-@Getter
+@Getter @Setter
 public class Client {
     private int ID;
     private String name;
@@ -14,11 +15,12 @@ public class Client {
         this.ID = ClientIdGenerator.genId();
     }
 
-    public Client(String name, int age, Gender sex) {
+    public Client(String name, int age, Gender sex, String mail) {
         this.name = name;
         this.age = age;
         this.sex = sex;
         this.ID = ClientIdGenerator.genId();
+        this.mail = mail;
     }
 
     private static class ClientIdGenerator {
